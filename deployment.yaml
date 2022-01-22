@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: container-home
-        image: srikanta1219/home:latest
+        image: srikanta1219/home:38
         ports:
         - containerPort: 80
 
@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
       - name: container-jenkins
-        image: srikanta1219/jenkins:latest
+        image: srikanta1219/jenkins:38
         ports:
         - containerPort: 80
 ---
@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: container-docker
-        image: srikanta1219/docker:latest
+        image: srikanta1219/docker:38
         ports:
         - containerPort: 80
 ---
@@ -87,7 +87,7 @@ spec:
     spec:
       containers:
       - name: container-kubern8s
-        image: srikanta1219/kubern8s:latest
+        image: srikanta1219/kubern8s:38
         ports:
         - containerPort: 80
 ---
