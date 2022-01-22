@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dep-home
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: home
 spec:
@@ -26,7 +26,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dep-jenkins
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: jenkins
 spec:
@@ -49,7 +49,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dep-docker
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: docker
 spec:
@@ -72,7 +72,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dep-kubern8s
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: kubern8s
 spec:
@@ -95,7 +95,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: home-svc
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: home
 spec:
@@ -111,7 +111,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: jenkins-svc
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: jenkins
 spec:
@@ -127,7 +127,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: docker-svc
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: docker
 spec:
@@ -143,7 +143,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kubern8s-svc
-  namespace: myapp
+ # namespace: myapp
   labels:
     app: kubern8s
 spec:
