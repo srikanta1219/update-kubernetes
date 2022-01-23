@@ -165,31 +165,31 @@ spec:
   - host: kmaster.example.com
     http:
       paths:
-      - path: /
+      - path: /home
         pathType: Prefix
         backend:
           service:
             name: home-svc
             port:
-              number: 80
-      - path: /
+              number: 30001
+      - path: /jenkins
         pathType: Prefix
         backend:
           service:
             name: jenkins-svc
             port:
-              number: 80
-      - path: /
+              number: 30002
+      - path: /docker
         pathType: Prefix
         backend:
           service:
             name: docker-svc
             port:
-              number: 80
-      - path: /
+              number: 30003
+      - path: /kubern8s
         pathType: Prefix
         backend:
           service:
             name: kubern8s-svc
             port:
-              number: 80       
+              number: 30004     
