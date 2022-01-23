@@ -154,3 +154,45 @@ spec:
    #nodePort: 30002
   selector:
     app: kubern8s
+    
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: shanvi-devops
+spec:
+  rules:
+  - host: shanvi.devops.com
+    http:
+      paths:
+      - path: /home
+        pathType: Prefix
+        backend:
+          service:
+            name: home-svc
+            port:
+              number: 80
+      - path: /jenkins
+        pathType: Prefix
+        backend:
+          service:
+            name: jenkins-svc
+            port:
+              number: 80
+      - path: /docker
+        pathType: Prefix
+        backend:
+          service:
+            name: docker-svc
+            port:
+              number: 80
+      - path: /kubern8s
+        pathType: Prefix
+        backend:
+          service:
+            name: kubern8s-svc
+            port:
+              number: 80
+
