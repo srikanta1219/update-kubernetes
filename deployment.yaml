@@ -115,7 +115,7 @@ metadata:
   labels:
     app: jenkins
 spec:
-  #type: LoadBalancer
+  type: LoadBalancer
   #type: NodePort
   ports:
   - port: 80
