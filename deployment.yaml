@@ -167,7 +167,7 @@ spec:
   - host: shanvi.devops.com
     http:
       paths:
-      - path: /home
+      - path: /
         pathType: Prefix
         backend:
           service:
