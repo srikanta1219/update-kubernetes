@@ -22,7 +22,7 @@ node {
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                        sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/k8s-code-jenkins.git HEAD:main"
+                        sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/update-kubernetes.git HEAD:main"
                         //sh "git push https://github.com/srikanta1219/k8s-menifest HEAD:main"
                         
       }
